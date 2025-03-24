@@ -40,7 +40,7 @@ public class UserController {
         if (isAuthenticated != -1) {
             return new ResponseEntity(isAuthenticated, HttpStatus.OK);
         } else {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Incorrect email or password.");
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Incorrect Entered email or password.");
         }
     }
 }
